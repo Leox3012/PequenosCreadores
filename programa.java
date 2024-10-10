@@ -1,5 +1,5 @@
 /** 
-@author Leo V 
+@author Leo Valencia Santa 
 @version 1.0 
 @since 2024
 @param argumentos de la linea de comandos 
@@ -21,21 +21,57 @@
     int edadMaxima;
     ArrayList<nino> estudiantes;
 
-    //GETTERS
-public String getNombre() {
+    //GETTERS Y SETTERS
+    public double getVALOR_MATERIALES_PREMIUM() {
+        return VALOR_MATERIALES_PREMIUM;
+    }
+    
+    public double getVALOR_CLASES_INTENSIVAS() {
+        return VALOR_CLASES_INTENSIVAS;
+    }
+    
+    public double getVALOR_TALLERES_FIN_DE_SEMANA() {
+        return VALOR_TALLERES_FIN_DE_SEMANA;
+    }
+    
+    public String getNombre() {
         return nombre;
     }
-
+    
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
     public double getValorBase() {
         return valorBase;
     }
-
+    
+    public void setValorBase(double valorBase) {
+        this.valorBase = valorBase;
+    }
+    
     public int getEdadMinima() {
         return edadMinima;
     }
-
+    
+    public void setEdadMinima(int edadMinima) {
+        this.edadMinima = edadMinima;
+    }
+    
     public int getEdadMaxima() {
         return edadMaxima;
+    }
+    
+    public void setEdadMaxima(int edadMaxima) {
+        this.edadMaxima = edadMaxima;
+    }
+    
+    public ArrayList<nino> getEstudiantes() {
+        return estudiantes;
+    }
+    
+    public void setEstudiantes(ArrayList<nino> estudiantes) {
+        this.estudiantes = estudiantes;
     }
 
     //CONSTRUCTORES BASICO
@@ -47,6 +83,8 @@ public programa (String nombre, double valorBase, int edadMinima, int edadMaxima
         this.estudiantes = new ArrayList<>();
 
       }
+
+    
 
     //LISTA DE ESTUDIANTES
     public ArrayList<nino> obtenerEstudiantes(){

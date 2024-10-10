@@ -1,5 +1,5 @@
 /** 
-@author Leo V 
+@author Leo Valencia Santa 
 @version 1.0 
 @since 2024
 @param argumentos de la linea de comandos 
@@ -23,45 +23,47 @@ public class nino {
         this.tieneTalleresFinDeSemana = false;   // Por defecto
     }
 
-
-    //GETTERS & SETTERS
+    //GETTERS
     public String getNombre() {
         return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public int getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
     public boolean isTieneMaterialesPremium() {
         return tieneMaterialesPremium;
-    }
-
-    public void setTieneMaterialesPremium(boolean tieneMaterialesPremium) {
-        this.tieneMaterialesPremium = tieneMaterialesPremium;
     }
 
     public boolean isTieneClaseIntensivas() {
         return tieneClaseIntensivas;
     }
 
-    public void setTieneClaseIntensivas(boolean tieneClaseIntensivas) {
-        this.tieneClaseIntensivas = tieneClaseIntensivas;
-    }
-
     public boolean isTieneTalleresFinDeSemana() {
         return tieneTalleresFinDeSemana;
     }
 
-    public void setTieneTalleresFinDeSemana(boolean tieneTalleresFinDeSemana) {
-        this.tieneTalleresFinDeSemana = tieneTalleresFinDeSemana;
-    }
+   //SETTERS
+   public void setNombre(String nombre) {
+    this.nombre = nombre;
+}
+
+public void setEdad(int edad) {
+    this.edad = edad;
+}
+
+public void setTieneMaterialesPremium(boolean tieneMaterialesPremium) {
+    this.tieneMaterialesPremium = tieneMaterialesPremium;
+}
+
+public void setTieneClaseIntensivas(boolean tieneClaseIntensivas) {
+    this.tieneClaseIntensivas = tieneClaseIntensivas;
+}
+
+public void setTieneTalleresFinDeSemana(boolean tieneTalleresFinDeSemana) {
+    this.tieneTalleresFinDeSemana = tieneTalleresFinDeSemana;
+
+
+  }
 }

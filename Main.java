@@ -1,5 +1,5 @@
 /** 
-@author Leo V 
+@author Leo Valencia Santa 
 @version 1.0 
 @since 2024
 @param argumentos de la linea de comandos 
