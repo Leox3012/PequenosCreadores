@@ -30,6 +30,8 @@ public class Main {
 
          boolean seguir = true;  // Para controlar el ingreso de más estudiantes
 
+
+         // DO WHILE obliga a digitar min 1 dato
         while (seguir) {
             // INGRESAR DATOS DEL NIÑO
             String nombre = JOptionPane.showInputDialog("Ingrese el nombre del niño: ");
@@ -52,9 +54,9 @@ public class Main {
             }
 
             // Preguntar por opciones adicionales
-            int materialesPremium = JOptionPane.showConfirmDialog(null, "¿Desea materiales premium?", "Opciones", JOptionPane.YES_NO_OPTION);
-            int clasesIntensivas = JOptionPane.showConfirmDialog(null, "¿Desea clases intensivas?", "Opciones", JOptionPane.YES_NO_OPTION);
-            int talleresFinDeSemana = JOptionPane.showConfirmDialog(null, "¿Desea talleres de fin de semana?", "Opciones", JOptionPane.YES_NO_OPTION);
+            int materialesPremium = JOptionPane.showConfirmDialog(null, "¿Desea materiales premium por valor de 300000?", "Opciones", JOptionPane.YES_NO_OPTION);
+            int clasesIntensivas = JOptionPane.showConfirmDialog(null, "¿Desea clases intensivaspor valor de 200000?", "Opciones", JOptionPane.YES_NO_OPTION);
+            int talleresFinDeSemana = JOptionPane.showConfirmDialog(null, "¿Desea talleres de fin de semana valor de 150000?", "Opciones", JOptionPane.YES_NO_OPTION);
 
             // Crear el objeto Nino y asignar las opciones adicionales
             nino nuevoNino = new nino(nombre, edad);
